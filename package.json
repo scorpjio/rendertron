@@ -1,5 +1,5 @@
 {
-  "name": "rendertron",
+  "name": "rendertron-reworked",
   "version": "2.0.1",
   "description": "Renders webpages using headless Chrome for usage by bots",
   "license": "Apache-2.0",
