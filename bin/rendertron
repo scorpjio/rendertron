@@ -11,6 +11,10 @@ if (!semver.satisfies(process.version, '>=7')) {
   process.exit(1);
 }
 
-const Rendertron = require('../build/rendertron.js').Rendertron;
+const path = require('path')
+
+const JS_FILE_PATH = path.join(__dirname, '../../../node_modules', 'rendertron-reworked', 'build/rendertron.js');
+
+const Rendertron = require(JS_FILE_PATH).Rendertron;
 const rendertron = new Rendertron();
 rendertron.initialize();
